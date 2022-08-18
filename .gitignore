@@ -105,3 +105,6 @@ dist
 
 # Angular
 .angular/
+
+# IDE
+.idea/
