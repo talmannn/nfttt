@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/nfttt",
         "index": "apps/nfttt/src/index.html",
@@ -13,8 +15,14 @@
         "polyfills": "apps/nfttt/src/polyfills.ts",
         "tsConfig": "apps/nfttt/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/nfttt/src/favicon.ico", "apps/nfttt/src/assets"],
-        "styles": ["apps/nfttt/src/styles.scss"],
+        "assets": [
+          "apps/nfttt/src/favicon.ico",
+          "apps/nfttt/src/assets"
+        ],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+          "apps/nfttt/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -74,12 +82,17 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/nfttt/**/*.ts", "apps/nfttt/**/*.html"]
+        "lintFilePatterns": [
+          "apps/nfttt/**/*.ts",
+          "apps/nfttt/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/nfttt"],
+      "outputs": [
+        "coverage/apps/nfttt"
+      ],
       "options": {
         "jestConfig": "apps/nfttt/jest.config.ts",
         "passWithNoTests": true
