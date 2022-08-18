@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 # Nfttt
@@ -103,3 +104,6 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+=======
+# nfttt
+>>>>>>> d8a4185edd2991281cf8bde8074e4bd20e6cb4bd
